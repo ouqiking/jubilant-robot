@@ -1,0 +1,28 @@
+int main(){
+		double a;
+		double b = 0;
+		char e;
+		while(scanf("%lf%c%lf",&a,&e,&b)!=EOF){
+			switch(e){
+			case '+':
+				printf("%.5lf + %.5lf= %lf\n",a,b,a+b);
+				break;
+			case '-':
+				printf("%.5lf - %.5lf= %lf\n",a,b,a-b);
+				break;
+			case '*':
+				printf("%.5lf * %.5lf= %lf\n",a,b,a*b);
+				break;
+			case '/':
+				if (b == 0.0){
+					printf("that is wrong matter!\n");
+				}
+				else
+					printf("%.5lf / %.5lf= %lf\n",a,b,a/b);
+				break;
+			default:
+				printf("that is wrong matter!\n");
+				break;	
+			}
+		}
+	return 0;
