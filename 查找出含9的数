@@ -1,0 +1,14 @@
+int a=0;
+		char b[1];
+		int count=0;
+		for(int i=1;i<=2019;i++){
+			//TODO
+		if(i%10==9||i%100==9||i%1000==9){
+			//TODO
+			count++;
+			printf("%d %t",i);
+			if (count%10==0&&count!=0)
+				printf("\n");
+		}
+		}
+		printf("%d",count);
